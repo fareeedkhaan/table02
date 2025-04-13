@@ -1,77 +1,92 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <style>
-            h1{
-                text-align: center;
-                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-            }
-            .heading{
-                text-align: center;
-                font-size: 19px;
-                font-style: oblique;
-                font-weight: bold;
-            }
-            table{
-                width: 100%;
-                border-collapse: collapse;
-            }
-            td{
-                border: 1px solid black;
-                padding: 10px;
-            }
-            #sn{
-                width:40px;
-                height: 40px;
-            }
-        </style>
-    </head>
-    <body>
-        <h1>Student Result</h1>
-        <table>
-        <tbody class="heading">
-            <td id="sn">S.no</td>
-            <td>Name</td>
-            <td>Marks Obtained</td>
-            <td>Passing Mark</td>
-            <td>Remarks</td>        
-        </tbody>
-        <tbody>
-            <td id="sn">1.</td>
-            <td>Student A</td>
-            <td>400</td>
-            <td>250</td>
-            <td>Pass</td>
-        </tbody> 
-        <tbody>
-            <td id="sn">2.</td>
-            <td>Student B</td>
-            <td>251</td>
-            <td>250</td>
-            <td>Pass</td>
-        </tbody> 
-        <tbody>
-            <td id="sn">3.</td>
-            <td>Student C</td>
-            <td>089</td>
-            <td>250</td>
-            <td>Fail</td>
-        </tbody> 
-        <tbody>
-            <td id="sn">4.</td>
-            <td>Student D</td>
-            <td>270</td>
-            <td>250</td>
-            <td>Pass</td>
-        </tbody> 
-        <tbody>
-            <td id="sn">5.</td>
-            <td>Student E</td>
-            <td>190</td>
-            <td>250</td>
-            <td>Fail</td>
-        </tbody> 
-        </table>
+<head>
+    <title>Student Record Table</title>
+    <style>
+        body{
+            background-color: #8e8370;
+        }
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            margin: 20px auto;
+            font-family: Arial, sans-serif;
+            background-image: url(https://img00.deviantart.net/4ad5/i/2005/355/6/f/light_tan_paper_by_jernastock.jpg);
+        }
+        th, td {
+            border: 1px solid #751717;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #e5f579;
+        }
+        h2 {
+            margin-bottom: 10px;
+            text-align: center;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        footer {
+         position: fixed;
+         bottom: 0;
+         width: 100%;
+        background-color: #333;
+         color: white;
+         text-align: center;
+         padding: 10px 0;
+}
+    </style>
+</head>
+<body>
 
-    </body>
+<table>
+    <h2>Student Records</h2>
+    <tr>
+        <th rowspan="2">Name</th>
+        <th rowspan="2">Registration No</th>
+        <th colspan="2">CGPA Till Last Semester</th>
+    </tr>
+    <tr>
+        <th>Semester 1</th>
+        <th>Semester 2</th>
+    </tr>
+
+    <tr>
+        <td rowspan="2">Fareed</td>
+        <td rowspan="2">23155135031</td>
+        <td>8.1</td>
+        <td>8.5</td>
+    </tr>
+    <tr>
+        <td colspan="2">Average: 8.3</td>
+    </tr>
+    <tr>
+        <td>Vishal</td>
+        <td>23155135033</td>
+        <td>7.8</td>
+        <td>8.2</td>
+    </tr>
+    <tr>
+        <td>Azkaar</td>
+        <td>23155135034</td>
+        <td>8.3</td>
+        <td>8.6</td>
+    </tr>
+    <tr>
+        <td>Aniket</td>
+        <td>23155135035</td>
+        <td>7.9</td>
+        <td>8.1</td>
+    </tr>
+    <tr>
+        <td>Arman</td>
+        <td>23155135036</td>
+        <td>8.4</td>
+        <td>8.7</td>
+    </tr>
+
+</table>
+    <footer><p>@ Bihar Engineering University</p></footer>
+
+</body>
 </html>
